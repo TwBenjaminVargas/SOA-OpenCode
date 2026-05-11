@@ -1,0 +1,21 @@
+{
+  "weekly": {
+    "url": "https://grafana-fabriziobiondi.duckdns.org/d/fa98846/aire-semana",
+    "metrics": [
+      "Promedio por día de la semana",
+      "Mejor día",
+      "Peor día",
+      "Alarmas esta semana",
+      "Tiempo de duración de alarma promedio semanal"
+    ]
+  },
+  "daily": {
+    "url": "https://grafana-fabriziobiondi.duckdns.org/d/fagfnz4/aire-detalle-dia",
+    "metrics": [
+      "Calidad del aire",
+      "Última medición",
+      "Calidad del aire promedio por hora",
+      "Alarmas abiertas"
+    ]
+  }
+}
