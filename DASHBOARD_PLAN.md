@@ -30,9 +30,9 @@ Mostrar los dashboards de forma prolija, agradable y óptima, adaptándose a la 
 - [ ] **Fase Final:** Preparación para despliegue en GitHub Pages.
 
 ### Fase 4: Despliegue en GitHub Pages
-- [ ] **Configuración de Deployment:** Ajustar `vite.config.js` y crear el workflow necesario para GitHub Actions.
-- [ ] **Instrucciones al Desarrollador:** Explicar cómo configurar los secretos de GitHub y habilitar Pages en el repositorio.
-- [ ] **Verificación Final:** Comprobar el funcionamiento de la app en la URL pública.
+- [x] **Configuración de Deployment:** Ajustar `vite.config.js` y crear el workflow necesario para GitHub Actions.
+- [x] **Instrucciones al Desarrollador:** Explicar cómo configurar los secretos de GitHub y habilitar Pages en el repositorio.
+- [x] **Verificación Final:** Comprobar el funcionamiento de la app en la URL pública.
 
 ---
 
