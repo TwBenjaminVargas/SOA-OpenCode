@@ -16,16 +16,18 @@ Mostrar los dashboards de forma prolija, agradable y óptima, adaptándose a la 
     - **Vista Diaria:** `https://grafana-fabriziobiondi.duckdns.org/d/fagfnz4/aire-detalle-dia` (Incluye: Calidad del aire en tiempo real, Última medición, Promedio por hora y Alarmas abiertas).
 
 ### Fase 2: Componentes y Lógica de Visualización
-- [ ] **Lógica de Parámetros Dinámicos:** Implementar una utilidad que calcule los rangos de tiempo (`from`, `to`) y variables (`var-dia`) requeridos por Grafana basándose en la fecha actual del usuario.
-- [ ] **Componente `GrafanaDashboard.vue`:**
-    - Renderizado de dashboards mediante `<iframe>` con URLs dinámicas.
-    - Interfaz agradable con estados de carga específicos para cada tipo de gráfico.
-- [ ] **Diseño Adaptativo (Mobile-First):** Asegurar que las métricas clave (como "Última medición" o "Calidad del aire") sean legibles en móviles.
+- [x] **Lógica de Parámetros Dinámicos:** Utilidad para cálculo de timestamps y variables de Grafana.
+- [x] **Layout Multitarea:** Separación de métricas de estado (cuadrícula) y gráficos (lista vertical).
+- [x] **Selector de Temas:** Implementación de modo Oscuro/Claro que sincroniza automáticamente con los dashboards de Grafana.
+- [x] **Contexto del Robot:** Actualización de identidad visual a "Sistema Móvil de Telemetría".
 
 ### Fase 3: Interfaz de Usuario (UI/UX) y Navegación
-- [ ] **Dashboard Layout:** Crear una interfaz limpia que resalte las mediciones de calidad de aire.
-- [ ] **Selector de Temporalidad:** Control visual para que el usuario alterne manualmente entre vista de "Hoy" y "Semanal".
-- [ ] **Estética IoT:** Aplicar un tema visual moderno acorde a sistemas de monitoreo.
+- [x] **Refinamiento de Gráficos:** Intercambio de paneles (Calidad vs Alarmas) para optimizar tamaños.
+- [x] **Consolidación Semanal:** Paneles de alarmas y conteos movidos a la sección de métricas rápidas superiores.
+- [x] **Ajuste de Paneles Críticos:** Reclasificación de "Alarmas de Calidad" y "Conteo de Alarmas" como métricas pequeñas (stat) para una lectura rápida.
+- [x] **Corrección de Lógica Temporal:** Ajuste de parámetros `from`/`to` para mostrar el día completo (00:00 - 23:59) y evitar recortes extraños en el dashboard diario.
+- [x] **Optimización de Zoom:** Implementación de parámetros de auto-escala para mejorar la visibilidad de los gráficos embebidos.
+- [ ] **Fase Final:** Preparación para despliegue en GitHub Pages.
 
 ### Fase 4: Despliegue en GitHub Pages
 - [ ] **Configuración de Deployment:** Ajustar `vite.config.js` y crear el workflow necesario para GitHub Actions.

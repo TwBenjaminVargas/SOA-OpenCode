@@ -1,21 +1,22 @@
 {
-  "weekly": {
-    "url": "https://grafana-fabriziobiondi.duckdns.org/d/fa98846/aire-semana",
-    "metrics": [
-      "Promedio por día de la semana",
-      "Mejor día",
-      "Peor día",
-      "Alarmas esta semana",
-      "Tiempo de duración de alarma promedio semanal"
+  "daily": {
+    "baseUrl": "https://grafana-fabriziobiondi.duckdns.org/d-solo/fagfnz4/aire-detalle-dia",
+    "panels": [
+      { "id": "panel-4", "type": "stat", "title": "Última Medición" },
+      { "id": "panel-3", "type": "stat", "title": "Alarmas Abiertas" },
+      { "id": "panel-2", "type": "stat", "title": "Alarmas de Calidad" },
+      { "id": "panel-5", "type": "graph", "title": "Calidad del Aire" },
+      { "id": "panel-1", "type": "graph", "title": "Calidad del Aire Promedio por Hora" }
     ]
   },
-  "daily": {
-    "url": "https://grafana-fabriziobiondi.duckdns.org/d/fagfnz4/aire-detalle-dia",
-    "metrics": [
-      "Calidad del aire",
-      "Última medición",
-      "Calidad del aire promedio por hora",
-      "Alarmas abiertas"
+  "weekly": {
+    "baseUrl": "https://grafana-fabriziobiondi.duckdns.org/d-solo/fa98846/aire-semana",
+    "panels": [
+      { "id": "panel-3", "type": "stat", "title": "Mejor Día" },
+      { "id": "panel-4", "type": "stat", "title": "Peor Día" },
+      { "id": "panel-5", "type": "stat", "title": "Alarmas esta Semana" },
+      { "id": "panel-2", "type": "stat", "title": "Conteo de Alarmas" },
+      { "id": "panel-1", "type": "graph", "title": "Promedio por día de la semana" }
     ]
   }
 }
